@@ -1,0 +1,32 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.store-img{
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+}
+
+.logo {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.square-img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+}
+
+.error {
+    color: red;
+}
+
+
+
