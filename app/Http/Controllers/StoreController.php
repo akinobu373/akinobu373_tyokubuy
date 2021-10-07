@@ -56,7 +56,6 @@ class StoreController extends Controller
         $store->address = $request->address;
         $store->latitude = $request->latitude;
         $store->longitude = $request->longitude;
-        // dd($store);
         $store->save();
         return redirect()->route('store.index');
     }

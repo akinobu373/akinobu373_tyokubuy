@@ -16,7 +16,7 @@
         <tr>
             <th>直売所画像</th>
             <td>
-                @if (!empty($store->img_path))
+                @if ($store->img_path)
                 <div>
                     <img src="{{ Storage::disk('public')->url($store->img_path) }}" class="square-img">
                 </div>

@@ -21,7 +21,7 @@
     @csrf
     <div>
         <label for="address">住所:</label>
-        <textarea  name="address" cols="30" >{{ old('address') }}</textarea>
+        <textarea name="address" cols="30">{{ old('address') }}</textarea>
     </div>
     <div>
         <label for="img_path">直売所の画像</label>
@@ -33,8 +33,8 @@
         <label for="vegetable_id">野菜</label>
         <select name="vegetable_id" id="vegetable_id">
             @foreach ($vegetables as $vegetable)
-            <option value="{{ $vegetable->id }}" @if (old('vegetable')==$vegetable->id) selected
-                @endif>{{ $vegetable->name }}
+            <option value="{{ $vegetable->id }}" @if (old('vegetable')==$vegetable->id) selected @endif>
+                {{ $vegetable->name }}
             </option>
             @endforeach
     </div>
@@ -66,9 +66,9 @@
             lat.value = e.latlng['lat'];
             lng.value = e.latlng['lng'];
             marker.on('dragend', function(e) {
-             // 座標は、e.target.getLatLng()で取得
-            lat.value = e.target.getLatLng()['lat'];
-            lng.value = e.target.getLatLng()['lng'];
+                // 座標は、e.target.getLatLng()で取得
+                lat.value = e.target.getLatLng()['lat'];
+                lng.value = e.target.getLatLng()['lng'];
             });
             }
         });
