@@ -22,7 +22,7 @@
     @method('PATCH')
     <div>
         <label for="address">住所:</label>
-        <textarea name="address" cols="30" rows="10">{{ old('address',$store->address) }}</textarea>
+        <textarea name="address" cols="30">{{ old('address',$store->address) }}</textarea>
     </div>
     <div>
         <label for="img_path">直売所の画像</label>
